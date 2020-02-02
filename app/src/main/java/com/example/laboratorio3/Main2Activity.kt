@@ -19,16 +19,19 @@ class Main2Activity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main2)
 
-        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN)
+        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN)//Sube la pantalla si el teclado tapa el editText
 
-        var place:String = intent.getStringExtra(com.example.laboratorio3.EXTRA_MESSAGE)
+        val place:String? = intent.getStringExtra(com.example.laboratorio3.EXTRA_MESSAGE)//Recibe la info del boton en la actividad anterior
         binding.goBack="Back"
-        binding.hintText="Send this text back"
+        binding.hintText="Send this comment back"
 
         showInfo(place)
 
     }
-    fun showInfo(place:String){
+    fun showInfo(place:String?){
+        /*
+        Dependiendo de la info que recibio, muestra el titulo, la imagen y descripcion necesarias
+         */
         if(place.equals("Tikal")){
             binding.placeKnown="Tikal"
             binding.showPlace.setImageResource(R.drawable.tikal)
@@ -48,6 +51,9 @@ class Main2Activity : AppCompatActivity() {
         }
     }
 
+        /*
+        El boton envia de regreso el comentario que se ingreso en el editText
+         */
     fun goBack(view: View) {
         val int= Intent(this, MainActivity::class.java).apply {
             putExtra(SEND_BACK_MESSAGE, binding.sendBack.getText().toString())

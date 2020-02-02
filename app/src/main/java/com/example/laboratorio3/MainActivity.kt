@@ -24,16 +24,14 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
-        binding.initialText="Nombre"
+        binding.initialText="Nombre"//Da el texto al text y edit text
         binding.editText="Ingrese su nombre"
 
-        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN)
+        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN) //Mueve la pantalla si el teclado tapa el edit text
 
-        var comment:String? = " "
-        comment = intent.getStringExtra(SEND_BACK_MESSAGE)
-        if(comment!= " "){
-            showToast(comment)
-        }
+
+        val comment:String? = intent.getStringExtra(SEND_BACK_MESSAGE)
+        showToast(comment)//Muestra el toast
 
 
 
@@ -41,6 +39,9 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun showName(view: View) {
+    /*
+    Si esta el TextView del nombre, lo esconde y esconde el editText y muestra el nuevo textView con el nombre ingresado y viceversa
+    */
         if(binding.nameText.getVisibility() == View.VISIBLE){
             binding.nameInput = binding.nameInsert.getText().toString()
             binding.nameText.setVisibility(View.INVISIBLE)
@@ -54,6 +55,9 @@ class MainActivity : AppCompatActivity() {
 
         
     }
+    /*
+    Los tres botones abren la otra actividad, pero envian el lugar al que corresponden para mostrar la info correcta
+     */
     fun changeTikal(view: View){
 
         val int= Intent(this, Main2Activity::class.java).apply {
@@ -83,6 +87,9 @@ class MainActivity : AppCompatActivity() {
         startActivity(int)
         finish()
     }
+    /*
+    Muestra el Toast que regreso de la otra actividad
+     */
     fun showToast(comment:String?){
         Toast.makeText(this, comment, Toast.LENGTH_LONG).show()
 
