@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Laboratorio 3</string>
+    <string name="name_value">Nombre</string>
+    <string name="name_input">Ingrese su nombre</string>
+    <string name="title_text">Guatemala</string>
+    <string name="info_guate">Guatemala, es el Corazón del Mundo Maya. Viva, mágica, mística y ancestral. Su historia se remonta a cuatro mil años, cuando emergió la civilización maya, cuyo legado perdura hoy en día con las tradiciones y cultura de su gente. \n\ \n\
+
+Guatemala es un país de extraordinaria riqueza cultural y natural y con una ubicación geográfica privilegiada. Las distancias de lugar a lugar son cortas, lo que permite visitar varias regiones en un mismo viaje.\n\ \n\
+
+Es un país único, de aventura, inolvidable, entre su pasado y presente, además de la diversidad de actividades que ofrece al visitante. Conocido como el país de la eterna primavera, goza de un clima agradable que permite visitarlo en cualquier época del año. Además, ofrece varias posibilidades de acceso desde cualquier parte del mundo, contando con dos aeropuertos internacionales: La Aurora, situado en la ciudad capital; y Mundo Maya, ubicado en el departamento de Petén.\n\ \n\
+
+El colorido de sus mercados de artesanías y de sus trajes regionales, la hospitalidad de su gente, la belleza de sus paisajes naturales que enmarcan volcanes, lagos, ríos y montañas, hacen que Guatemala quede grabada en el corazón de quienes la visitan. Su patrimonio natural, cultural e histórico puede descubrirse en cada rincón del país.\n\ \n\
+
+Guatemala alberga la mayor cantidad de sitios arqueológicos de la cultura maya, rodeados de una impresionante flora y fauna, que los convierte en verdaderos pulmones de la humanidad. La magia y el misterio del Mundo Maya subsisten en ciudades milenarias como Tikal, Yaxhá, Aguateca, Mirador, Quiriguá y Q’uma’rkaj entre otras.\n\ \n\
+
+Además, Guatemala ofrece ventajas en algunos segmentos específicos para los visitantes, como su ubicación estratégica, facilidades en sus terminales terrestres y marítimas, lo que la hacen un importante destino para los cruceros del Pacífico y el Atlántico. Sus recursos pesqueros en la Costa Pacífica le han dado reconocimiento como uno de los mejores lugares para la pesca del pez vela en el mundo. La variedad de más de 720 especies de aves, la convierte en un maravilloso e importante destino para observarlas. Así también, el país posee todas las características para propiciar actividades de negocios, además de ser un destino ideal para convenciones nacionales e internacionales.\n\ \n\
+
+Guatemala con su riqueza y diversidad ofrece numerosas formas para gozar sus vacaciones o viajes de negocios, porque pueden encontrar en un solo lugar diferentes segmentos de turismo, en sus siete maravillosas regiones.\n\ \n\
+
+https://visitguatemala.com/por-que-guatemala/</string>
+    <string name="change_one">Tikal</string>
+    <string name="change_two">Atitlan</string>
+    <string name="change_three">Izabal</string>
+</resources>
